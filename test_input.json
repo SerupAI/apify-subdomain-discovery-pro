@@ -1,0 +1,10 @@
+{
+  "domains": ["example.com"],
+  "subdomainWordlist": "basic",
+  "includeSecurityAnalysis": true,
+  "includeInfrastructureDetection": true,
+  "includeCertificateTransparency": false,
+  "maxConcurrency": 5,
+  "requestDelay": 0.5,
+  "includeInactiveSubdomains": false
+}
