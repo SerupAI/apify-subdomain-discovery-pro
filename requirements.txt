@@ -1,0 +1,36 @@
+# Apify SDK for Python
+apify>=1.7.0
+
+# DNS resolution and network utilities  
+dnspython>=2.4.2
+requests>=2.31.0
+httpx>=0.24.1
+
+# SSL/TLS certificate analysis
+pyOpenSSL>=23.2.0
+cryptography>=41.0.3
+
+# IP/ASN lookups
+ipwhois>=1.2.0
+
+# Subdomain enumeration
+sublist3r>=1.0.5
+
+# Certificate Transparency
+certstream>=1.11
+
+# Async/concurrency
+asyncio>=3.4.3
+aiohttp>=3.8.5
+
+# Data processing
+tldextract>=3.4.4
+validators>=0.20.0
+
+# Security analysis
+python-nmap>=0.7.1
+wappalyzer>=0.3.11
+
+# Performance and utilities
+rich>=13.5.2
+pydantic>=2.3.0

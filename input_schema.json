@@ -1,0 +1,89 @@
+{
+  "title": "Advanced Subdomain Discovery Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "domains": {
+      "title": "Target Domains",
+      "type": "array",
+      "description": "List of domains to analyze for subdomains (e.g., example.com, target.org)",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-zA-Z0-9]([a-zA-Z0-9\\-]{0,61}[a-zA-Z0-9])?\\.[a-zA-Z]{2,}$"
+      },
+      "minItems": 1,
+      "maxItems": 50,
+      "editor": "stringList"
+    },
+    "subdomainWordlist": {
+      "title": "Subdomain Wordlist",
+      "type": "string",
+      "description": "Wordlist to use for subdomain enumeration",
+      "default": "security_focused",
+      "enum": [
+        "basic",
+        "common", 
+        "security_focused",
+        "comprehensive",
+        "custom"
+      ],
+      "enumTitles": [
+        "Basic (20 common subdomains)",
+        "Common (100+ web subdomains)",
+        "Security Focused (500+ security/admin subdomains)", 
+        "Comprehensive (2000+ extensive wordlist)",
+        "Custom (provide your own wordlist)"
+      ]
+    },
+    "customWordlist": {
+      "title": "Custom Wordlist",
+      "type": "array",
+      "description": "Custom subdomain wordlist (used when 'custom' is selected above)",
+      "items": {
+        "type": "string"
+      },
+      "editor": "stringList"
+    },
+    "includeSecurityAnalysis": {
+      "title": "Include Security Analysis",
+      "type": "boolean",
+      "description": "Perform security analysis on discovered subdomains (SSL, headers, vulnerabilities)",
+      "default": true
+    },
+    "includeInfrastructureDetection": {
+      "title": "Infrastructure Detection",
+      "type": "boolean", 
+      "description": "Detect cloud providers, CDNs, and technology stacks",
+      "default": true
+    },
+    "includeCertificateTransparency": {
+      "title": "Certificate Transparency Lookup",
+      "type": "boolean",
+      "description": "Search certificate transparency logs for additional subdomains",
+      "default": true
+    },
+    "maxConcurrency": {
+      "title": "Max Concurrency",
+      "type": "integer",
+      "description": "Maximum concurrent requests (higher = faster, but may trigger rate limits)",
+      "default": 10,
+      "minimum": 1,
+      "maximum": 50
+    },
+    "requestDelay": {
+      "title": "Request Delay (seconds)",
+      "type": "number",
+      "description": "Delay between requests to avoid rate limiting",
+      "default": 0.3,
+      "minimum": 0,
+      "maximum": 5
+    },
+    "includeInactiveSubdomains": {
+      "title": "Include Inactive Subdomains",
+      "type": "boolean",
+      "description": "Include subdomains that don't resolve to IP addresses",
+      "default": false
+    }
+  },
+  "required": ["domains"]
+}
