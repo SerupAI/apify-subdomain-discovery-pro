@@ -1,5 +1,5 @@
 {
-  "domains": ["https://cloudlife.io", "example.com"],
+  "domains": ["https://httpbin.org", "example.com"],
   "subdomainWordlist": "basic",
   "includeSecurityAnalysis": true,
   "includeInfrastructureDetection": true,
