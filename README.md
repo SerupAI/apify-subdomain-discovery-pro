@@ -4,15 +4,15 @@
 
 ## 🔍 Overview
 
-This actor combines multiple advanced techniques for subdomain discovery with comprehensive security analysis, providing actionable intelligence for security professionals. Built on proven infrastructure patterns and optimized for the Apify platform.
+This actor combines multiple advanced techniques for subdomain discovery with comprehensive security analysis, providing actionable intelligence for security professionals.
 
 ## 🚀 Key Features
 
-### Multi-Method Subdomain Discovery
-- **Wordlist Enumeration**: Security-focused wordlists with 500+ subdomain patterns
-- **Certificate Transparency**: Search CT logs for historical subdomain certificates
-- **DNS Zone Transfer**: Attempt zone transfers for complete subdomain lists
-- **Reverse DNS Analysis**: Discover additional subdomains from IP addresses
+### Advanced Subdomain Discovery
+- **Multiple Discovery Methods**: Combines various techniques for comprehensive coverage
+- **Security-Focused Wordlists**: Extensive patterns targeting security-relevant subdomains
+- **Certificate Analysis**: Leverage SSL certificates for subdomain discovery
+- **DNS Intelligence**: Advanced DNS techniques for thorough enumeration
 
 ### Comprehensive Security Analysis
 - **SSL/TLS Assessment**: Certificate validation, cipher analysis, vulnerability detection
@@ -95,10 +95,10 @@ Each discovered subdomain includes:
 ## ⚙️ Configuration Options
 
 ### Wordlist Selection
-- **Basic**: 20 common subdomains for quick scans
-- **Common**: 100+ web application subdomains
-- **Security Focused**: 500+ security and admin subdomains (recommended)
-- **Comprehensive**: 2000+ extensive wordlist for thorough enumeration
+- **Basic**: Essential subdomains for quick scans
+- **Common**: Standard web application subdomains
+- **Security Focused**: Extensive security and admin patterns (recommended)
+- **Comprehensive**: Maximum coverage wordlist for thorough enumeration
 - **Custom**: Provide your own subdomain wordlist
 
 ### Performance Tuning
@@ -121,15 +121,14 @@ This tool is designed for **legitimate security research, authorized penetration
 - Follow responsible disclosure practices for discovered vulnerabilities
 - Comply with applicable laws and terms of service
 
-## 🔧 Technical Architecture
+## 🔧 Technical Features
 
-Built on proven patterns from production security infrastructure:
+Professional-grade architecture designed for reliability:
 
-- **Asynchronous Processing**: High-performance concurrent enumeration
-- **Modular Design**: Extensible architecture for additional techniques
-- **Error Handling**: Robust error handling and retry mechanisms
-- **Rate Limiting**: Intelligent request throttling to avoid detection
-- **Caching**: Efficient result caching for performance optimization
+- **High-Performance Processing**: Optimized concurrent enumeration
+- **Intelligent Rate Limiting**: Respectful request throttling
+- **Robust Error Handling**: Automatic retry and recovery mechanisms
+- **Efficient Caching**: Smart result optimization for performance
 
 ## 📈 Performance Benchmarks
 
@@ -149,10 +148,10 @@ Built on proven patterns from production security infrastructure:
 ## 🏆 Why Choose This Actor?
 
 ### Competitive Advantages
-- **Zero Competition**: First professional subdomain discovery actor on Apify
-- **Enterprise Features**: Production-ready architecture and security analysis
-- **Proven Technology**: Built on battle-tested infrastructure patterns
-- **Continuous Updates**: Regular improvements and new discovery techniques
+- **Professional Quality**: Enterprise-grade reliability and performance
+- **Comprehensive Analysis**: Beyond basic discovery - includes security insights
+- **Apify Integration**: Native platform optimization and dataset management
+- **Active Development**: Regular improvements and feature updates
 
 ### Value Proposition
 - **Time Savings**: Automate 10+ hours of manual reconnaissance
@@ -169,9 +168,7 @@ Built on proven patterns from production security infrastructure:
 
 ## 🏷️ Pricing
 
-- **Basic Plan**: $49/month - Essential subdomain discovery
-- **Professional Plan**: $149/month - Full security analysis
-- **Enterprise Plan**: $499/month - Custom wordlists and priority support
+Flexible pay-per-result pricing based on subdomains analyzed. No monthly commitments required.
 
 ---
 
