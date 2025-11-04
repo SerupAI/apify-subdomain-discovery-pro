@@ -4,6 +4,10 @@ Adapted from CloudSight's domain enumeration capabilities with security enhancem
 """
 import asyncio
 import dns.resolver
+import dns.zone
+import dns.query
+import dns.name
+import dns.rdatatype
 import ssl
 import socket
 from typing import Dict, List, Set, Optional, Any
