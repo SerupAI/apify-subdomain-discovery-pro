@@ -34,19 +34,22 @@ def normalize_domain(domain_input: str) -> str:
     if not domain_input:
         return ""
     
+    # Strip whitespace
+    domain_input = domain_input.strip()
+    
     # Remove protocol if present
     if '://' in domain_input:
         parsed = urlparse(domain_input)
         domain = parsed.netloc if parsed.netloc else ""
     else:
         # Handle cases with paths or ports
-        if '/' in domain_input or ':' in domain_input:
-            parsed = urlparse(f"//{domain_input}")
-            domain = parsed.netloc if parsed.netloc else domain_input.split('/')[0].split(':')[0]
+        if '/' in domain_input:
+            # Split on first slash to remove path
+            domain = domain_input.split('/')[0]
         else:
             domain = domain_input
     
-    # Remove port if present
+    # Remove port if present (but not for IPv6)
     if ':' in domain and not domain.count(':') > 1:  # Not IPv6
         domain = domain.split(':')[0]
     
@@ -55,6 +58,9 @@ def normalize_domain(domain_input: str) -> str:
     
     # Convert to lowercase
     domain = domain.lower()
+    
+    # Additional cleanup
+    domain = domain.strip()
     
     return domain
 

@@ -54,10 +54,19 @@ async def main() -> None:
             
             for domain in domains:
                 try:
+                    # Normalize domain (handles URLs, strips protocols, etc.)
                     normalized_domain = normalize_domain(domain)
-                    if not validate_domain(normalized_domain):
-                        Actor.log.warning(f"Invalid domain format: {domain}")
+                    
+                    if not normalized_domain:
+                        Actor.log.warning(f"Could not extract domain from input: {domain}")
                         continue
+                    
+                    if not validate_domain(normalized_domain):
+                        Actor.log.warning(f"Invalid domain format after normalization: {domain} -> {normalized_domain}")
+                        continue
+                    
+                    if normalized_domain != domain:
+                        Actor.log.info(f"Normalized input '{domain}' to domain '{normalized_domain}'")
                     
                     Actor.log.info(f"Processing domain: {normalized_domain}")
                     progress.update(main_task, description=f"Processing {normalized_domain}")

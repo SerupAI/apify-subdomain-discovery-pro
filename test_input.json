@@ -1,5 +1,5 @@
 {
-  "domains": ["example.com"],
+  "domains": ["https://cloudlife.io", "example.com"],
   "subdomainWordlist": "basic",
   "includeSecurityAnalysis": true,
   "includeInfrastructureDetection": true,

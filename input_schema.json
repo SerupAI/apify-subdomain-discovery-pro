@@ -6,10 +6,11 @@
     "domains": {
       "title": "Target Domains",
       "type": "array",
-      "description": "List of domains to analyze for subdomains (e.g., example.com, target.org)",
+      "description": "List of domains or URLs to analyze for subdomains. You can enter domains (example.com) or full URLs (https://example.com/path) - both formats are accepted and will be automatically normalized.",
       "items": {
         "type": "string",
-        "pattern": "^[a-zA-Z0-9]([a-zA-Z0-9\\-]{0,61}[a-zA-Z0-9])?\\.[a-zA-Z]{2,}$"
+        "minLength": 3,
+        "maxLength": 253
       },
       "minItems": 1,
       "maxItems": 50,
