@@ -1,2 +1,2 @@
-# Advanced Subdomain Discovery & Security Intelligence
+# Subdomain Discovery Pro
 # Professional subdomain enumeration for security researchers

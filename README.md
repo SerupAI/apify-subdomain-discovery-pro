@@ -1,4 +1,4 @@
-# Advanced Subdomain Discovery & Security Intelligence
+# Subdomain Discovery Pro
 
 **Professional subdomain enumeration and security analysis tool for bug bounty hunters, penetration testers, and security researchers.**
 

@@ -1,7 +1,7 @@
 {
   "actorSpecification": 1,
   "name": "subdomain-discovery-pro",
-  "title": "Advanced Subdomain Discovery & Security Intelligence",
+  "title": "Subdomain Discovery Pro",
   "description": "Professional subdomain enumeration and security analysis tool for bug bounty hunters, penetration testers, and security researchers. Discovers subdomains, analyzes infrastructure, detects vulnerabilities, and provides comprehensive security intelligence.",
   "version": "1.0.0",
   "meta": {

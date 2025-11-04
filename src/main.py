@@ -1,5 +1,5 @@
 """
-Advanced Subdomain Discovery & Security Intelligence Actor
+Subdomain Discovery Pro Actor
 Main logic adapted from CloudSight infrastructure analysis
 """
 import asyncio

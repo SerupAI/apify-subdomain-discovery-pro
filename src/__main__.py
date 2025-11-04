@@ -1,5 +1,5 @@
 """
-Advanced Subdomain Discovery & Security Intelligence Actor
+Subdomain Discovery Pro Actor
 Main entry point for the Apify actor
 """
 import asyncio
